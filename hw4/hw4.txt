@@ -1,0 +1,15 @@
+1.
+
+x**2 + b*x + c
+don't work:
+c = 0 (f(x) % x == 0)
+b % 2 == 1 and c % 2 == 0 (f(x) % 2 == 0)
+b = d + e and c = e*d where d and e are integers (f(x) = x**2 + b*x + c = (x + d)*(x + e))
+
+My conjecture is that otherwise the set contains infinite primes.
+
+2.
+	Primes who modded by n are divisible by a factor of n are rare (only those less than n) but otherwise primes are divided fairly equally into the different modulo n buckets if n is not prime. If n is prime there is one prime is 0 mod n, the primes are fairly evenly divided into the other buckets except that the bucket n-1 mod n has about double what the others do.
+
+3.
+	1234567/8901234
