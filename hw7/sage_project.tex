@@ -1,0 +1,34 @@
+\documentclass{article}
+\title{Sage Project}
+\author{Clara Moore}
+
+\begin{document}
+\maketitle
+
+\section{Background}
+Sage already has many different types of graph to choose from, but only one of those graphs is data taken from the real world, the rest are purely mathematical.
+\label{included}\subsection{To make my point} \label{inc}
+For example sage contains:
+\begin{enumerate}
+\item DegreeSequenceConfigurationModel
+\item KneserGraph
+\item RandomNewmanWattsStrogatz
+\end{enumerate}
+\subsection{Real world data}
+But the only real world data graph contained in sage is a world map. Simply one of many (see section \ref{included})
+\section{Why this is important}
+There are graph algorithms that are meaningless on purely mathematical graphs. To do testing or benchmarking of these algorithms graphs are needed on which the algoritms make sense/are usefull. Also, generated graphs can be very regular, or may not have been seeded well, and using collected data lowers the risk of that kind of bias.
+\section{Proposal}
+My project will be to add on to the functionality of graphs in sage to include more graphs taken from data. This will allow users of sage to test out algorithms and do benchmarking that would make no sense on a purely mathematical graph in sage without needing to get the data and figure out how to make a sage graph with it themselves.
+\subsection{Option 1}
+I could find multiple separate files with graph data and create python code to read in those files and make graphs from them.
+\subsection{Option 2}
+The other possibiltiy would be to find a site online that can be queried and write the code to query the site, read in the reply it sends, and turn that into a sage graph.
+\section{End result}
+It would be easy to create graphs in sage from actual data, and there are datasets of different sizes available.
+\section{Where I am currently}
+I've found a site with many graphs that keeps them all in the same format. I can read in one of those files and turn it into a graph if the file is in the right place and the file name is hard coded into my code. I'm working on having the filename be an input to the graph creation.
+\section{Just for the pretties}
+$$\frac{\sin{\left(x^{2\ln{\left(\tan{\left(\frac{\sqrt{y}}{43}\right)}\right)}}\right)}}{\sqrt{y+\sqrt{36x^3} + \pi^{3x+5y^8}}}$$
+
+\end{document}
